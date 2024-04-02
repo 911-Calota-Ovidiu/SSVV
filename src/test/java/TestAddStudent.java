@@ -12,24 +12,17 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class TestAddStudent {
     private Service service;
-    private StudentValidator studentValidator;
-    private TemaValidator temaValidator;
-    private NotaValidator notaValidator;
-    private StudentXMLRepository fileRepository1;
-    private TemaXMLRepository fileRepository2;
-    private NotaXMLRepository fileRepository3;
-    private UI console;
 
     @BeforeEach
     void setUp() {
-        studentValidator = new StudentValidator();
-        temaValidator = new TemaValidator();
-        notaValidator = new NotaValidator();
-        fileRepository1 = new StudentXMLRepository(studentValidator, "studentitest.xml");
-        fileRepository2 = new TemaXMLRepository(temaValidator, "temetest.xml");
-        fileRepository3 = new NotaXMLRepository(notaValidator, "notetest.xml");
+        StudentValidator studentValidator = new StudentValidator();
+        TemaValidator temaValidator = new TemaValidator();
+        NotaValidator notaValidator = new NotaValidator();
+        StudentXMLRepository fileRepository1 = new StudentXMLRepository(studentValidator, "studentitest.xml");
+        TemaXMLRepository fileRepository2 = new TemaXMLRepository(temaValidator, "temetest.xml");
+        NotaXMLRepository fileRepository3 = new NotaXMLRepository(notaValidator, "notetest.xml");
         service = new Service(fileRepository1, fileRepository2, fileRepository3);
-        console = new UI(service);
+        UI console = new UI(service);
     }
 
     @Test
