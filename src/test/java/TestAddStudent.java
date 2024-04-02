@@ -81,7 +81,7 @@ public class TestAddStudent extends TestCase {
 
     //Valid group
     public void testAddValidGroup2() {
-        int result = service.saveStudent("6", "Jeremy", 937);
+        int result = service.saveStudent("6", "Jeremy", 939);
         assertEquals(0, result);
     }
 
@@ -92,8 +92,32 @@ public class TestAddStudent extends TestCase {
     }
 
     //Group is 938
-    public void testAddEmptyGroup() {
-        int result = service.saveStudent("8", "Jaeger", 938);
+    public void testAddInvalidGroup1() {
+        int result = service.saveStudent("8", "Jaeger", 941);
+        assertEquals(1, result);
+    }
+
+    //Group abc has a=0
+    public void testAddInvalidGroup2() {
+        int result = service.saveStudent("9", "Jolyne", 21);
+        assertEquals(1, result);
+    }
+
+    //Group abc has b=0
+    public void testAddInvalidGroup3() {
+        int result = service.saveStudent("10", "Jamison", 201);
+        assertEquals(1, result);
+    }
+
+    //Group abc has c=0
+    public void testAddInvalidGroup4() {
+        int result = service.saveStudent("11", "Jordan", 210);
+        assertEquals(1, result);
+    }
+
+    //Group abc has b>3
+    public void testAddInvalidGroup5() {
+        int result = service.saveStudent("12", "Jasmine", 241);
         assertEquals(1, result);
     }
 }
