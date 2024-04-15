@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <Entitati>
     <tema ID="1">
-        <Descriere>Description</Descriere>
+        <Descriere>Description of a valid tema(for testing purposes only, studends ignore)</Descriere>
         <Deadline>14</Deadline>
         <Startline>1</Startline>
     </tema>
