@@ -8,6 +8,10 @@
         <Nume>Jill</Nume>
         <Grupa>931</Grupa>
     </student>
+    <student ID="69">
+        <Nume>Joseph</Nume>
+        <Grupa>931</Grupa>
+    </student>
     <student ID="5">
         <Nume>Josh</Nume>
         <Grupa>111</Grupa>
@@ -15,5 +19,9 @@
     <student ID="6">
         <Nume>Jeremy</Nume>
         <Grupa>939</Grupa>
+    </student>
+    <student ID="12345">
+        <Nume>Joseph</Nume>
+        <Grupa>931</Grupa>
     </student>
 </Entitati>
