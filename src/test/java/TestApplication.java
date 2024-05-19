@@ -52,4 +52,28 @@ public class TestApplication {
         assertEquals(0,result2);
         assertEquals(0,result3);
     }
+
+    @Test
+    void testAddAnotherValidStudent() {
+        int result = service.saveStudent("1245", "Jolyne", 931);
+        assertEquals(0, result);
+    }
+
+    @Test
+    void testAddStudentAndAssignment() {
+        int result = service.saveStudent("12425", "Jack", 931);
+        assertEquals(0, result);
+        int result1 = this.service.saveTema("12", "Description of a valid tema(for testing purposes only, students ignore)", 6, 1);
+        Assertions.assertEquals(result1, 0);
+    }
+
+    @Test
+    void testAddStudentAndAssignmentAndGrade() {
+        int result = service.saveStudent("1425", "Jenna", 931);
+        assertEquals(0, result);
+        int result1 = this.service.saveTema("122", "Description of a valid tema(for testing purposes only, students ignore)", 6, 1);
+        Assertions.assertEquals(result1, 0);
+        int result2 = service.saveNota("1425", "122", 10.0, 2, "Bine bo$$");
+        assertEquals(0, result2);
+    }
 }

@@ -5,6 +5,11 @@
         <SaptamanaPredare>7</SaptamanaPredare>
         <Feedback>Slab frate, mai invata</Feedback>
     </nota>
+    <nota IDStudent="1425" IDTema="122">
+        <Nota>10.0</Nota>
+        <SaptamanaPredare>2</SaptamanaPredare>
+        <Feedback>Bine bo$$</Feedback>
+    </nota>
     <nota IDStudent="1" IDTema="1493">
         <Nota>9.0</Nota>
         <SaptamanaPredare>2</SaptamanaPredare>

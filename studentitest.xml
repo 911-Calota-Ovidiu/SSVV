@@ -4,6 +4,10 @@
         <Nume>Joseph</Nume>
         <Grupa>931</Grupa>
     </student>
+    <student ID="1425">
+        <Nume>Jenna</Nume>
+        <Grupa>931</Grupa>
+    </student>
     <student ID="2">
         <Nume>Jill</Nume>
         <Grupa>931</Grupa>
@@ -16,12 +20,20 @@
         <Nume>Josh</Nume>
         <Grupa>111</Grupa>
     </student>
+    <student ID="1245">
+        <Nume>Jolyne</Nume>
+        <Grupa>931</Grupa>
+    </student>
     <student ID="6">
         <Nume>Jeremy</Nume>
         <Grupa>939</Grupa>
     </student>
     <student ID="12345">
         <Nume>Joseph</Nume>
+        <Grupa>931</Grupa>
+    </student>
+    <student ID="12425">
+        <Nume>Jack</Nume>
         <Grupa>931</Grupa>
     </student>
 </Entitati>

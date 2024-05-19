@@ -10,6 +10,16 @@
         <Deadline>6</Deadline>
         <Startline>1</Startline>
     </tema>
+    <tema ID="122">
+        <Descriere>Description of a valid tema(for testing purposes only, students ignore)</Descriere>
+        <Deadline>6</Deadline>
+        <Startline>1</Startline>
+    </tema>
+    <tema ID="12">
+        <Descriere>Description of a valid tema(for testing purposes only, students ignore)</Descriere>
+        <Deadline>6</Deadline>
+        <Startline>1</Startline>
+    </tema>
     <tema ID="25">
         <Descriere>Description of a valid tema(for testing purposes only, studends ignore)</Descriere>
         <Deadline>6</Deadline>
